@@ -217,6 +217,11 @@ export class AuthConfig {
   */
   public useHttpBasicAuthForPasswordFlow? = false;
 
+  /*
+   * add audience for requests to the auth server
+  */
+  public audience? = '';
+
   constructor(json?: Partial<AuthConfig>) {
     if (json) {
       Object.assign(this, json);
